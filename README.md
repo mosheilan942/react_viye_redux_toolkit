@@ -2,13 +2,7 @@ React Redux Toolkit Demo
 
 This project demonstrates using React Redux Toolkit to manage application state.
 
-Table of Contents
-Overview
-State Management
-Components
-Redux Logic
-Running the Project
-Next Steps
+
 Overview
 React components located in src/components
 Redux logic located in src/app
