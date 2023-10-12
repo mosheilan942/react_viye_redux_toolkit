@@ -1,6 +1,6 @@
-# React Redux Toolkit Demo #
+React Redux Toolkit Demo
 
-# This project demonstrates using React Redux Toolkit to manage application state. #
+This project demonstrates using React Redux Toolkit to manage application state.
 
 Table of Contents
 Overview
