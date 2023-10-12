@@ -1,27 +1,42 @@
-# React + TypeScript + Vite
+# React Redux Toolkit Demo #
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# This project demonstrates using React Redux Toolkit to manage application state. #
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Table of Contents
+Overview
+State Management
+Components
+Redux Logic
+Running the Project
+Next Steps
+Overview
+React components located in src/components
+Redux logic located in src/app
+animalSlice.ts contains the animal reducer and actions
+store.ts configures the Redux store
+App.tsx renders the main Provider
+State Management
+Application state is kept in the Redux store
+The animalSlice slice manages state of the selected animal
+Components dispatch Redux actions to update state
+Selectors allow components to extract state
+Components
+Buttons - Renders buttons to select animals
+MyButton - Button component for each animal
+Display - Shows currently selected animal
+Another - Text input to add custom animal
+Redux Logic
+selectAnimal action sets the selected animal
+Reducer listens for this action and updates state
+useAppSelector hook allows components to access updated state
+Running the Project
+Clone the repo
+Run npm install
+Run npm run dev
+App will start on localhost:3000
+Next Steps
+Connect more components to Redux
+Add animations and styles
+Fetch animal data from API
+Add routing
+Write tests for components and redux logic
